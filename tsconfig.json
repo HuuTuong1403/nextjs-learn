@@ -20,7 +20,8 @@
       "@/styles/*": ["./styles/*"],
       "@/constants/*": ["./constants/*"],
       "@/hook/*": ["./hook/*"],
-      "@/models/*": ["./models/*"]
+      "@/models/*": ["./models/*"],
+      "@/api/*": ["./api-client/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
