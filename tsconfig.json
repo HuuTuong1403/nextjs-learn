@@ -19,7 +19,7 @@
       "@/components/*": ["./components/*"],
       "@/styles/*": ["./styles/*"],
       "@/constants/*": ["./constants/*"],
-      "@/hook/*": ["./hook/*"],
+      "@/hooks/*": ["./hooks/*"],
       "@/models/*": ["./models/*"],
       "@/api/*": ["./api-client/*"]
     }
