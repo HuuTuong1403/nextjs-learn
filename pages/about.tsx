@@ -2,9 +2,6 @@ import { AdminLayout } from '@/components/layout'
 import { Box, Typography } from '@mui/material'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/dist/client/router'
-import dynamic from 'next/dynamic'
-
-const Header = dynamic(() => import('@/components/common/header'), { ssr: false })
 
 export interface AboutPageProps {}
 export default function AboutPage(props: AboutPageProps) {
@@ -42,8 +39,6 @@ export default function AboutPage(props: AboutPageProps) {
       <Typography component="h1" variant="h3" color="primary.main">
         About Page
       </Typography>
-
-      <Header />
 
       <ul>
         {postList.map((post: any) => (
