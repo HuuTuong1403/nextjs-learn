@@ -1,12 +1,12 @@
 import { AdminLayout } from '@/components/layout'
+import { Box, Typography } from '@mui/material'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/dist/client/router'
 import dynamic from 'next/dynamic'
-import React, { useEffect, useState } from 'react'
 
 const Header = dynamic(() => import('@/components/common/header'), { ssr: false })
 
 export interface AboutPageProps {}
-
 export default function AboutPage(props: AboutPageProps) {
   const [postList, setPostList] = useState([])
   const router = useRouter()
@@ -38,8 +38,10 @@ export default function AboutPage(props: AboutPageProps) {
   }
 
   return (
-    <div>
-      <h1>About Page</h1>
+    <Box>
+      <Typography component="h1" variant="h3" color="primary.main">
+        About Page
+      </Typography>
 
       <Header />
 
@@ -50,7 +52,7 @@ export default function AboutPage(props: AboutPageProps) {
       </ul>
 
       <button onClick={handleNextClick}>Next page</button>
-    </div>
+    </Box>
   )
 }
 
