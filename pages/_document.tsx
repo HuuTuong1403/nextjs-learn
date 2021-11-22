@@ -1,5 +1,5 @@
-import { theme, createEmotionCache } from '@/utils/index'
-import * as React from 'react'
+import { theme, createEmotionCache } from '@/utils'
+import React from 'react'
 import createEmotionServer from '@emotion/server/create-instance'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 

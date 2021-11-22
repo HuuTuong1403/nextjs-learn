@@ -18,11 +18,11 @@
     "paths": {
       "@/components/*": ["./components/*"],
       "@/styles/*": ["./styles/*"],
-      "@/constants/*": ["./constants/*"],
-      "@/hooks/*": ["./hooks/*"],
-      "@/models/*": ["./models/*"],
+      "@/constants": ["./constants/index"],
+      "@/hooks": ["./hooks/index"],
+      "@/models": ["./models/index"],
       "@/api/*": ["./api-client/*"],
-      "@/utils/*": ["./utils/*"]
+      "@/utils": ["./utils/index"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

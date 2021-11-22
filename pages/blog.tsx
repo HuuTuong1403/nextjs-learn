@@ -1,5 +1,4 @@
 import { MainLayout } from '@/components/layout'
-import * as React from 'react'
 
 export interface BlogPageProps {}
 

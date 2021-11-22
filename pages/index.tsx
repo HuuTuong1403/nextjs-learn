@@ -1,6 +1,6 @@
-import { MainLayout } from '@/components/layout'
-import { NextPageWithLayout } from '@/models/common'
 import { Box } from '@mui/material'
+import { MainLayout } from '@/components/layout'
+import { NextPageWithLayout } from '@/models'
 import { useRouter } from 'next/dist/client/router'
 
 const Home: NextPageWithLayout = () => {

@@ -1,4 +1,4 @@
-import { LayoutProps } from '@/models/index'
+import { LayoutProps } from '@/models'
 import React from 'react'
 
 export function EmptyLayout({ children }: LayoutProps) {
