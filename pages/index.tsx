@@ -1,7 +1,8 @@
-import { Box } from '@mui/material'
 import { MainLayout } from '@/components/layout'
 import { NextPageWithLayout } from '@/models'
+import { Box } from '@mui/material'
 import { useRouter } from 'next/dist/client/router'
+import Head from 'next/head'
 
 const Home: NextPageWithLayout = () => {
   const router = useRouter()
@@ -16,7 +17,15 @@ const Home: NextPageWithLayout = () => {
     })
   }
 
-  return <Box>Home Page</Box>
+  return (
+    <>
+      <Head>
+        <title>Home Page | NextJS Learning-Tom</title>
+      </Head>
+
+      <Box>Home Page</Box>
+    </>
+  )
 }
 Home.Layout = MainLayout
 

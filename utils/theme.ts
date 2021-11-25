@@ -41,10 +41,32 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           color: 'black',
-          '&:hover': {
+          transition: 'all 0.2s ease-in-out',
+          '&:hover, &.active': {
             color: '#FF6464',
           },
+        },
+      },
+    },
+    MuiListItemButton: {
+      defaultProps: {},
+      styleOverrides: {
+        root: {
           transition: 'all 0.2s ease-in-out',
+          '&:hover, &.active': {
+            color: '#fff',
+            backgroundColor: '#FF6464',
+          },
+        },
+      },
+    },
+    MuiListItemIcon: {
+      defaultProps: {},
+      styleOverrides: {
+        root: {
+          '&.active': {
+            color: '#fff',
+          },
         },
       },
     },
