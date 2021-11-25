@@ -38,16 +38,16 @@ export default function HeaderMobile(props: HeaderMobileProps) {
               <List>
                 {ROUTE_LIST.map((route) => (
                   <ListItem key={route.path} onClick={() => setOpen(false)} disablePadding>
-                    <ListItemButton className={clsx({ active: router.pathname === route.path })}>
-                      <ListItemIcon className={clsx({ active: router.pathname === route.path })}>
-                        {route.path === '/' && <Home />}
-                        {route.path === '/works' && <Work />}
-                        {route.path === '/blog' && <Article />}
-                      </ListItemIcon>
-                      <Link href={route.path} passHref>
+                    <Link href={route.path} passHref>
+                      <ListItemButton className={clsx({ active: router.pathname === route.path })}>
+                        <ListItemIcon className={clsx({ active: router.pathname === route.path })}>
+                          {route.path === '/' && <Home />}
+                          {route.path === '/works' && <Work />}
+                          {route.path === '/blog' && <Article />}
+                        </ListItemIcon>
                         <ListItemText>{route.label}</ListItemText>
-                      </Link>
-                    </ListItemButton>
+                      </ListItemButton>
+                    </Link>
                   </ListItem>
                 ))}
               </List>
