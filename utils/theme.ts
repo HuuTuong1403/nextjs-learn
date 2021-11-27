@@ -10,6 +10,7 @@ export const theme = createTheme({
       main: '#FF6464',
     },
     secondary: {
+      light: '#EDF7FA',
       main: '#00A8CC',
     },
     error: {
@@ -72,6 +73,16 @@ export const theme = createTheme({
           },
         },
       },
+    },
+    MuiButton: {
+      variants: [
+        {
+          props: { variant: 'contained', color: 'primary' },
+          style: {
+            color: 'white',
+          },
+        },
+      ],
     },
   },
 })

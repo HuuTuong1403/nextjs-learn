@@ -22,7 +22,8 @@
       "@/hooks": ["./hooks/index"],
       "@/models": ["./models/index"],
       "@/api/*": ["./api-client/*"],
-      "@/utils": ["./utils/index"]
+      "@/utils": ["./utils/index"],
+      "@/images/*": ["./images/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
